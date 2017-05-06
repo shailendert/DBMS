@@ -30,7 +30,7 @@ Finally, invoke the parser. We must run java from the command line.From the cbpd
 
 	Computing table stats.
 	Done.
-	cbpdbms>
+	SimpleDB>
 
 Finally, you can run a query:
 
