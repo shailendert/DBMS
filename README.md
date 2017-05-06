@@ -11,7 +11,7 @@ The first step is to create some data tables and a catalog. Suppose we have a fi
 
 We can convert this into a CBPDBMS table using the convert command:
 	
-	convert data.txt 2 "int,int"
+	java -jar dist/CBPDBMS.jar convert data.txt 2 "int,int"
 
 This creates a file data.dat. In addition to the table's raw data, the two additional parameters specify that each record has two fields and that their types are `INT` and `INT`.
 
@@ -23,7 +23,7 @@ This tells cbpdbms that there is one table, data (stored in data.dat) with two i
 
 Finally, invoke the parser. We must run java from the command line.From the cbpdbms/ directory, type:
 
-	parser catalog.txt
+	java -jar dist/CBPDBMS.jar parser catalog.txt
 
 	Added table : data with schema f1(INT)
 	f2(INT)
@@ -64,7 +64,7 @@ Create a query.txt file in cbpdbms/ directory with the following contents:
 
 Run query in eclipse 
 
-	parser catalog.txt -f query.txt
+	java -jar dist/CBPDBMS.jar parser catalog.txt -f query.txt
 
 The result in console
 
