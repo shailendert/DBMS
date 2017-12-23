@@ -30,11 +30,11 @@ Finally, invoke the parser. We must run java from the command line.From the cbpd
 
 	Computing table stats.
 	Done.
-	SimpleDB>
+	CBPDBMS>
 
 Finally, you can run a query:
 
-	SimpleDB> select * from data;
+	CBPDBMS> select * from data;
 	Started a new transaction tid = 1
 	Added scan of table data
 	Added select list field null.*
